@@ -10,6 +10,8 @@ Creating a new Exploding Password requires a password and an expiration date.  T
 
 To provide a hint of security, you can limit the maximum amount of times the password can be viewed (after which point it will be deleted), and you can limit access to the password by IP address or range.
 
+As long as you only serve the site over SSL, the unique URL will never be sent in plaintext over the wire, so will remain anonymous (as SSL establishes the encrypted connection first, before requesting the page).
+
 
 Technical
 ---------
