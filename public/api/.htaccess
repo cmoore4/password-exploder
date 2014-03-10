@@ -1,0 +1,5 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /api/
+    RewriteRule ^(.*)$ index.php?_url=/$1 [QSA,L]
+</IfModule>

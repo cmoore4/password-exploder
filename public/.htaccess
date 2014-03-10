@@ -1,0 +1,9 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymLinks
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^(images|scripts|css|api)($|/) - [L]
+  RewriteRule ^(.*)$ index.html [L]
+</IfModule>
+
+AddType text/css .css 
